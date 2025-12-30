@@ -4,10 +4,15 @@
   padding: 0;
 }
 
+/* Fondo negro y centrado real */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #0b0b0b; /* negro */
-  min-height: 100vh;
+  background: #0b0b0b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,10 +21,9 @@ body {
 /* Cuadrado central */
 .container {
   background: #ffffff;
-  width: 100%;
-  max-width: 420px;
+  width: 360px;              /* 👈 cuadrado controlado */
   padding: 30px 25px;
-  border-radius: 16px;
+  border-radius: 18px;
   box-shadow: 0 20px 40px rgba(236, 72, 153, 0.35);
   text-align: center;
 }
@@ -29,19 +33,90 @@ h1 {
   font-size: 22px;
   font-weight: 800;
   color: #000000;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   letter-spacing: 1px;
 }
 
-/* Imagen */
+/* Imagen MUY controlada */
 .logo {
-  width: 60px;      /* 👈 tamaño controlado */
+  width: 60px !important;    /* 👈 fuerza tamaño */
+  max-width: 60px !important;
   height: auto;
-  margin: 10px auto 15px;
   display: block;
+  margin: 8px auto 14px;
 }
 
 /* Aclaración */
 .info {
   background: #fdf2f8;
-  color
+  color: #9d174d;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* Label */
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #111827;
+  text-align: left;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #ec4899;
+}
+
+/* Ayuda */
+small {
+  color: #6b7280;
+  display: block;
+  margin-bottom: 14px;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #be185d;
+}
+
+/* Resultado */
+#resultado {
+  margin-top: 18px;
+  padding: 12px;
+  background: #fce7f3;
+  color: #9d174d;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+/* Error */
+#error {
+  margin-top: 14px;
+  padding: 10px;
+  background: #111827;
+  color:
