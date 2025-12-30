@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Cotizador de Producto</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
-<h1>Cotizador</h1>
+<div class="container">
+  <h1>Cotizador</h1>
 
-<form id="cotizador">
-  <label>
-    Valor a cotizar:
-    <input
-      type="number"
-      id="valor"
-      step="0.01"
-      min="2"
-      max="30"
-      required
-    >
-  </label>
+  <form id="cotizador">
+    <label>
+      Valor a cotizar
+      <input
+        type="number"
+        id="valor"
+        step="0.01"
+        min="2"
+        max="30"
+        required
+      >
+    </label>
 
-  <small>Ingresá un valor entre 2 y 30</small>
+    <small>Ingresá un valor entre 2 y 30</small>
 
-  <button type="submit">Calcular cotización</button>
-</form>
+    <button type="submit">Calcular cotización</button>
+  </form>
 
-<p id="resultado"></p>
-<p id="error"></p>
+  <p id="resultado"></p>
+  <p id="error"></p>
+</div>
 
-<script src="script.js"></script>
 </body>
-</html>
