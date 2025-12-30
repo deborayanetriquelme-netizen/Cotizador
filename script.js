@@ -24,6 +24,4 @@ document.getElementById("cotizador").addEventListener("submit", function (e) {
 
   const cotizacion = (valor + 2.5) * 1500;
 
-  resultadoEl.innerText =
-    `La cotización es: $${cotizacion.toLocaleString("es-AR")}`;
-});
+  resultadoEl.innerText = cotizacion.toLocaleString("es-AR");
