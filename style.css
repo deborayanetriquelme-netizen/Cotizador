@@ -119,4 +119,7 @@ button:hover {
   margin-top: 14px;
   padding: 10px;
   background: #111827;
-  color:
+  color: #f472b6;
+  border-radius: 12px;
+  font-weight: 600;
+}
