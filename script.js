@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const cotizacion = (valor + 2.5) * 1500;
 
     // Mostrar SOLO el número
-    resultado.innerText = cotizacion.toLocaleString("es-AR");
+    resultado.innerText = "$ " + cotizacion.toLocaleString("es-AR");
   });
 });
