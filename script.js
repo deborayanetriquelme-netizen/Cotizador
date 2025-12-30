@@ -1,27 +1,33 @@
-document.getElementById("cotizador").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("cotizador");
+  const input = document.getElementById("valor");
+  const resultado = document.getElementById("resultado");
+  const error = document.getElementById("error");
 
-  const valor = Number(document.getElementById("valor").value);
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  const MIN = 2;
-  const MAX = 30;
+    // limpiar mensajes
+    resultado.innerText = "";
+    error.innerText = "";
 
-  const errorEl = document.getElementById("error");
-  const resultadoEl = document.getElementById("resultado");
+    const valor = parseFloat(input.value);
 
-  errorEl.innerText = "";
-  resultadoEl.innerText = "";
+    // Validaciones
+    if (isNaN(valor)) {
+      error.innerText = "Ingresá un valor válido.";
+      return;
+    }
 
-  if (isNaN(valor)) {
-    errorEl.innerText = "Ingresá un número válido.";
-    return;
-  }
+    if (valor < 2 || valor > 30) {
+      error.innerText = "El valor debe estar entre 2 y 30 USD.";
+      return;
+    }
 
-  if (valor < MIN || valor > MAX) {
-    errorEl.innerText = `El valor debe estar entre ${MIN} y ${MAX}.`;
-    return;
-  }
+    // Cálculo: (valor + 2.5) * 1500
+    const cotizacion = (valor + 2.5) * 1500;
 
-  const cotizacion = (valor + 2.5) * 1500;
-
-  resultadoEl.innerText = cotizacion.toLocaleString("es-AR");
+    // Mostrar SOLO el número
+    resultado.innerText = cotizacion.toLocaleString("es-AR");
+  });
+});
