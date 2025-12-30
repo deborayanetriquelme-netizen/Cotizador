@@ -1,18 +1,22 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Cotizador de Producto</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 <body>
 
 <div class="container">
-  <h1>Cotizador</h1>
+
+  <!-- Imagen -->
+  <img src="logo.png" alt="PHOENIX BUYEE" class="logo">
+
+  <!-- Nombre -->
+  <h1>PHOENIX BUYEE</h1>
+
+  <!-- Mensaje informativo -->
+  <div class="info">
+    Los límites son de <strong>10 USD</strong> por PC individual y
+    <strong>30 USD</strong> por lotes.
+  </div>
 
   <form id="cotizador">
     <label>
-      Valor a cotizar
+      Valor a cotizar (USD)
       <input
         type="number"
         id="valor"
@@ -30,8 +34,8 @@
 
   <p id="resultado"></p>
   <p id="error"></p>
+
 </div>
 
 <script src="script.js"></script>
 </body>
-</html>
