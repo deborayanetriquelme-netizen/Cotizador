@@ -6,111 +6,42 @@
 
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #0f0f0f; /* negro */
+  background: #0b0b0b; /* negro */
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Tarjeta */
+/* Cuadrado central */
 .container {
   background: #ffffff;
-  padding: 30px 25px;
-  border-radius: 14px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
+  max-width: 420px;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.35);
   text-align: center;
-}
-
-/* Imagen */
-.logo {
-  width: 120px;
-  margin-bottom: 15px;
 }
 
 /* Título */
 h1 {
+  font-size: 22px;
+  font-weight: 800;
   color: #000000;
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
 
-/* Mensaje informativo */
+/* Imagen */
+.logo {
+  width: 80px;      /* 👈 tamaño controlado */
+  height: auto;
+  margin: 10px auto 15px;
+  display: block;
+}
+
+/* Aclaración */
 .info {
-  background: #fce7f3;
-  color: #9d174d;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-/* Label */
-label {
-  font-weight: 600;
-  display: block;
-  margin-bottom: 8px;
-  color: #111827;
-  text-align: left;
-}
-
-/* Input */
-input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #d1d5db;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-input:focus {
-  outline: none;
-  border-color: #ec4899;
-}
-
-/* Ayuda */
-small {
-  color: #6b7280;
-  display: block;
-  margin-bottom: 15px;
-}
-
-/* Botón */
-button {
-  width: 100%;
-  padding: 12px;
-  background: #ec4899; /* rosa */
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #be185d;
-}
-
-/* Resultado */
-#resultado {
-  margin-top: 20px;
-  padding: 12px;
   background: #fdf2f8;
-  color: #9d174d;
-  border-radius: 10px;
-  font-weight: 700;
-}
-
-/* Error */
-#error {
-  margin-top: 15px;
-  padding: 10px;
-  background: #111827;
-  color: #f472b6;
-  border-radius: 10px;
-  font-weight: 600;
-}
+  color
