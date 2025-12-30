@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (valor < 2 || valor > 30) {
-      error.innerText = "El valor debe estar entre 2 y 30 USD.";
+      error.innerText = "El valor debe estar entre 2 y 50 USD.";
       return;
     }
 
