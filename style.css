@@ -1,14 +1,12 @@
-/* Reset simple */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Fondo general */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background: #f4f6f8;
+  background: #0f0f0f; /* negro */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -19,17 +17,34 @@ body {
 .container {
   background: #ffffff;
   padding: 30px 25px;
-  border-radius: 12px;
+  border-radius: 14px;
   width: 100%;
-  max-width: 380px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 400px;
+  box-shadow: 0 15px 35px rgba(255, 105, 180, 0.25);
+  text-align: center;
+}
+
+/* Imagen */
+.logo {
+  width: 120px;
+  margin-bottom: 15px;
 }
 
 /* Título */
 h1 {
-  text-align: center;
+  color: #000000;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Mensaje informativo */
+.info {
+  background: #fce7f3;
+  color: #9d174d;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
   margin-bottom: 20px;
-  color: #1f2933;
 }
 
 /* Label */
@@ -37,25 +52,26 @@ label {
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
-  color: #374151;
+  color: #111827;
+  text-align: left;
 }
 
 /* Input */
 input {
   width: 100%;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #d1d5db;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 16px;
 }
 
 input:focus {
   outline: none;
-  border-color: #2563eb;
+  border-color: #ec4899;
 }
 
-/* Texto ayuda */
+/* Ayuda */
 small {
   color: #6b7280;
   display: block;
@@ -66,37 +82,35 @@ small {
 button {
   width: 100%;
   padding: 12px;
-  background: #2563eb;
+  background: #ec4899; /* rosa */
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1e40af;
+  background: #be185d;
 }
 
 /* Resultado */
 #resultado {
   margin-top: 20px;
   padding: 12px;
-  background: #ecfdf5;
-  color: #065f46;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: 600;
+  background: #fdf2f8;
+  color: #9d174d;
+  border-radius: 10px;
+  font-weight: 700;
 }
 
 /* Error */
 #error {
   margin-top: 15px;
   padding: 10px;
-  background: #fef2f2;
-  color: #991b1b;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: 500;
+  background: #111827;
+  color: #f472b6;
+  border-radius: 10px;
+  font-weight: 600;
 }
