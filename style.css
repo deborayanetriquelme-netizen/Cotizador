@@ -35,7 +35,7 @@ h1 {
 
 /* Imagen */
 .logo {
-  width: 80px;      /* 👈 tamaño controlado */
+  width: 60px;      /* 👈 tamaño controlado */
   height: auto;
   margin: 10px auto 15px;
   display: block;
